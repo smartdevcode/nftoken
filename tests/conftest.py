@@ -26,7 +26,6 @@ def nftmint(accounts, NFTokenMintable):
     yield token
 
 
-# range and balance checks
 @pytest.fixture(scope="module")
 def check_ranges(accounts, nft):
     upper = nft.totalSupply() + 1
